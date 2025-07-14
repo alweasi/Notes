@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes বাংলা</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul>
+          <li><a href="index.html">Intro</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Git & Github</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">React</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <section class="main_container container">
+        <h2 class="main_heading">Web and Internet Essentials</h2>
+        <div class="main_content">
+          <h3>Internet</h3>
+          <p>
+            Internet হলো একটি বৈশ্বিক নেটওয়ার্ক যেখানে অসংখ্য কম্পিউটার একে
+            অপরের সাথে সংযুক্ত থাকে এবং তারা
+            <strong>TCP/IP</strong> প্রোটোকলের মাধ্যমে Contact করে। এটি বিশ্বের
+            বিভিন্ন ডিভাইসকে
+            <strong>তথ্য আদান-প্রদান, Contact এবং Resource Access</strong> করার
+            সুযোগ দেয়।
+          </p>
+          <ul>
+            <li>সকল Online Contact-এর ভিত্তি হিসেবে কাজ করে।</li>
+            <li>
+              <strong>Web, Email, Cloud</strong> ইত্যাদি Service ব্যবহারের সুযোগ
+              তৈরি করে।
+            </li>
+            <li>
+              <strong
+                >TCP (Transmission Control Protocol)/IP (Internet
+                Protocol)</strong
+              >
+              এমন একটি ব্যবস্থা, যার মাধ্যমে Data ছোট ছোট packet-এ ভেঙে, সঠিক
+              ঠিকানায় পাঠানো হয় এবং শেষে তা আবার একত্রিত হয়।
+            </li>
+          </ul>
+
+          <br /><br />
+
+          <h3>World Wide Web (WWW বা Web)</h3>
+          <p>
+            Web হলো Internet-এর ওপর ভিত্তি করে তৈরি একটি তথ্য ব্যবস্থাপনা
+            পদ্ধতি, যেখানে Data Web Pages হিসেবে উপস্থাপন করা হয় এবং
+            <strong>Hyperlinks</strong> দ্বারা একে অপরের সাথে সংযুক্ত থাকে।
+          </p>
+          <ul>
+            <li>এটি Internet নয় — বরং Internet-এর একটি Service।</li>
+            <li>
+              Contact-এর জন্য <strong>HTTP/HTTPS</strong> Protocol ব্যবহার করে।
+            </li>
+            <li>
+              HTML দিয়ে লেখা Document, CSS দিয়ে Style এবং JavaScript দিয়ে
+              Functionality বাড়ানো হয়।
+            </li>
+            <li>URL (Uniform Resource Locator)-এর মাধ্যমে Access করা যায়।</li>
+          </ul>
+
+          <br /><br />
+
+          <h3>Web Browser</h3>
+          <p>
+            Web Browser হলো এমন একটি Software Application, যা User-কে Web-এ
+            সংরক্ষিত Web Pages দেখতে এবং তাদের সাথে interact করতে দেয়।
+          </p>
+          <ul>
+            <li>
+              উদাহরণ: Google Chrome, Mozilla Firefox, Safari, Microsoft Edge
+            </li>
+            <li>
+              HTML, CSS ও JavaScript Code Render করে Web Page প্রদর্শন করে।
+            </li>
+            <li>
+              Web Server-এর সাথে Contact করে প্রয়োজনীয় Page Retrieve করে আনে।
+            </li>
+          </ul>
+
+          <br /><br />
+
+          <h3>Website</h3>
+          <p>
+            Website হলো একাধিক Web Page-এর সমষ্টি, যেগুলো Hyperlink-এর মাধ্যমে
+            সংযুক্ত এবং একটি সাধারণ Domain Name-এর অধীনে থাকে।
+          </p>
+          <ul>
+            <li>Server-এ Host করা থাকে।</li>
+            <li>
+              Browser-এর মাধ্যমে Internet-এ URL ব্যবহার করে Access করা যায়।
+            </li>
+          </ul>
+
+          <br /><br />
+
+          <h3>Client & Server Architecture</h3>
+          <div class="boxes">
+            <div class="single_box">
+              <h4>Client</h4>
+              <ul>
+                <li>
+                  যেকোনো কম্পিউটার বা ডিভাইস যা
+                  <strong>Server-এ Request পাঠায় এবং Data Receive করে</strong>
+                  (যেমন: Web Browser)।
+                </li>
+                <li>
+                  Web Page-এর অনুরোধ করে এবং User-এর কাছে তা প্রদর্শন করে।
+                </li>
+              </ul>
+            </div>
+            <div class="single_box">
+              <h4>Server</h4>
+              <ul>
+                <li>
+                  একটি শক্তিশালী কম্পিউটার বা সিস্টেম, যা
+                  <strong
+                    >Client-এর অনুরোধ অনুযায়ী Data বা Resource Provide
+                    করে</strong
+                  >।
+                </li>
+                <li>
+                  Website, Database, API Host করে এবং HTTP Request-এর Response
+                  দেয়।
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <br /><br />
+
+          <h3>Domain & Hosting</h3>
+          <div class="boxes">
+            <div class="single_box">
+              <h4>Domain</h4>
+              <ul>
+                <li>
+                  Website-এর একটি Human-readable Address বা URL (যেমন:
+                  google.com), যা DNS-এর মাধ্যমে IP Address-এ রূপান্তরিত হয়।
+                </li>
+                <li>User-এর জন্য Website চেনার একটি পরিচিতি হিসেবে কাজ করে।</li>
+              </ul>
+            </div>
+            <div class="single_box">
+              <h4>Hosting</h4>
+              <ul>
+                <li>
+                  একটি Service যেখানে Website-এর File ও Data সংরক্ষণ করা হয় এবং
+                  ২৪/৭ Online রাখা হয়।
+                </li>
+                <li>এটি Website-কে Internet-এ সহজে Accessible করে তোলে।</li>
+              </ul>
+            </div>
+          </div>
+
+          <br /><br />
+
+          <h3>Types of Websites</h3>
+          <div class="boxes">
+            <div class="single_box">
+              <h4>Static Website</h4>
+              <ul>
+                <li>স্থির Content প্রদর্শন করে — সকল User-এর জন্য একরকম।</li>
+                <li>শুধু HTML ও CSS ব্যবহার করে তৈরি।</li>
+                <li>Interaction বা Database ব্যবহার করা হয় না।</li>
+                <li>উদাহরণ: Portfolio Website</li>
+              </ul>
+            </div>
+            <div class="single_box">
+              <h4>Dynamic Website</h4>
+              <ul>
+                <li>Content User Input বা Data অনুযায়ী পরিবর্তিত হয়।</li>
+                <li>Server-side Logic ও Database ব্যবহার করে।</li>
+                <li>উদাহরণ: E-commerce Site, Social Network</li>
+              </ul>
+            </div>
+          </div>
+
+          <br /><br />
+
+          <h3>Frontend vs Backend</h3>
+          <div class="boxes">
+            <div class="single_box">
+              <h4>Frontend</h4>
+              <ul>
+                <li>User Interface ও Experience</li>
+                <li>HTML, CSS, JavaScript দিয়ে তৈরি</li>
+                <li>Browser-এ রান করে</li>
+                <li>User-এর সাথে সরাসরি Interaction করে</li>
+              </ul>
+            </div>
+            <div class="single_box">
+              <h4>Backend</h4>
+              <ul>
+                <li>Server-side Logic এবং Data Handling</li>
+                <li>Node.js, PHP, Python ইত্যাদি দিয়ে তৈরি</li>
+                <li>Server-এ রান করে</li>
+                <li>Database, API ও Service Manage করে</li>
+              </ul>
+            </div>
+          </div>
+
+          <br /><br />
+
+          <h3>Software</h3>
+          <p>
+            Software হলো কিছু Instruction, Data বা
+            <strong>Computer Programs</strong>-এর একটি সংগ্রহ যা কোনো Machine
+            চালাতে এবং নির্দিষ্ট কাজ সম্পাদন করতে ব্যবহৃত হয়।
+          </p>
+
+          <h4>System software</h4>
+          <ul>
+            <li>Computer System-এর Resource পরিচালনার জন্য Design করা হয়।</li>
+            <li>User-এর জন্য তুলনামূলকভাবে কম Interactive।</li>
+          </ul>
+          <br />
+
+          <h4>Application based software</h4>
+          <ul>
+            <li>
+              User-এর নির্দিষ্ট Task সম্পাদনের চাহিদা পূরণের জন্য তৈরি করা হয়।
+            </li>
+            <li>আরও বেশি Interactive হয় User-এর জন্য।</li>
+            <li>Run করতে System Software প্রয়োজন হয়।</li>
+            <li>
+              <strong>Desktop Application</strong> - Computer-এ Install করে
+              লোকালি চালানো হয়।
+            </li>
+            <li>
+              <strong>Web Application</strong> - Internet-এর মাধ্যমে Web Browser
+              দিয়ে Access করা হয়।
+            </li>
+            <li>
+              <strong>Mobile Application</strong> - Mobile Device-এ সরাসরি
+              Install করে লোকালি Run করা হয়।
+            </li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Summary</h3>
+          <p>
+            <strong>Internet</strong> বিশ্বব্যাপী সংযুক্ত কম্পিউটার নেটওয়ার্ক।
+            <br />
+            <strong>Web</strong> Internet-এর উপর তৈরি Information System। <br />
+            <strong>Browser</strong> Website Access ও View করার Software। <br />
+            <strong>Website</strong> Hyperlink দ্বারা সংযুক্ত Web Pages-এর
+            সমষ্টি। <br />
+            <strong>Software</strong> Computer programs যা একটি নির্দিষ্ট task
+            সম্পাদন করে। <br />
+            <strong>Server</strong> Client-কে Data বা Resource Provide করে।
+            <br />
+            <strong>Client</strong> Server-এ Request পাঠায় এবং Data Receive করে।
+            <br />
+            <strong>Domain</strong> Website-এর Human-readable ঠিকানা (URL)।
+            <br />
+            <strong>Hosting</strong> Website-এর Files সংরক্ষণ ও Provide করার
+            Service। <br />
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+
+    <footer>
+      <h3>alweasi</h3>
+      <p>Software Developer - Frontend</p>
+      <p>Copyright &copy; 2025 | All rights reserved</p>
+    </footer>
+  </body>
+</html>
