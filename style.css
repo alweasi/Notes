@@ -67,6 +67,7 @@ a {
 header {
   position: sticky;
   top: 0;
+  background: #fff;
 }
 
 nav {
