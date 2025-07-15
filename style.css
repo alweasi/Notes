@@ -64,6 +64,11 @@ a {
 
 /* header styles */
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 nav {
   padding: 3rem 0;
 }
