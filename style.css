@@ -122,6 +122,16 @@ ol li {
   gap: 1rem;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
 /* footer styles  */
 
 footer {
@@ -146,10 +156,11 @@ footer h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   html {
     font-size: 53%;
   }
+
   .main_container {
     padding: 2rem;
   }
@@ -160,20 +171,10 @@ footer h2 {
   }
 
   nav {
-    padding: 3rem 0.5rem;
+    padding: 2rem 1rem;
   }
 
   nav ul {
     gap: 1rem;
   }
-}
-
-
-table {
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 10px 20px;
 }
