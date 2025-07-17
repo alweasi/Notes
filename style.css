@@ -160,7 +160,14 @@ footer h2 {
   html {
     font-size: 53%;
   }
+  
+  nav {
+    padding: 2rem 2.4rem;
+  }
 
+  nav ul {
+    gap: 1rem;
+  }
   .main_container {
     padding: 2rem;
   }
@@ -170,11 +177,27 @@ footer h2 {
     margin-left: 3rem;
   }
 
+}
+
+@media (max-width: 380px) {
+
   nav {
-    padding: 2rem 1rem;
+    padding: 2rem 1.1rem;
   }
 
-  nav ul {
-    gap: 1rem;
+}
+@media (max-width: 366px) {
+
+  nav {
+    padding: 2rem .5rem;
   }
+
+}
+
+@media (max-width: 350px) {
+
+  nav {
+    padding: 2rem 0rem;
+  }
+
 }
