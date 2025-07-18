@@ -8,7 +8,6 @@
   </head>
   <body>
     <!-- header section  -->
-
     <header>
       <nav class="container">
         <ul>
@@ -23,560 +22,532 @@
     </header>
 
     <!-- main section  -->
-
     <main>
-      <hr/>
+      <hr />
       <section class="main_container container">
-
         <!-- Introduction of HTML  -->
-
         <h2 class="main_heading">Introduction to HTML</h2>
         <div class="main_content">
-          <h3>What is HTML?</h3>
-          <p>
-            HTML stands for <strong>HyperText Markup Language</strong>. It's a
-            markup language used to create the
-            <strong>structure of web content</strong>. It builds the
-            <strong>skeleton of web pages.</strong>
-          </p>
-          <br/>
-          <br/>
-          <h3>Why is HTML used?</h3>
-          <ul>
-            <li>
-              To <strong>structure web pages</strong> and display text, images,
-              videos, and links.
-            </li>
-            <li>
-              To <strong>define layout and content</strong> in a way that
-              browsers can understand.
-            </li>
-            <li>
-              It is the <strong>foundation of any website</strong>, along with
-              CSS (styling) and JavaScript (interactivity).
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <!-- What is HTML  -->
+          <div class="mini-container">
+            <h3>What is HTML?</h3>
+            <p>
+              HTML stands for <strong>HyperText Markup Language</strong>. It's a
+              markup language used to create the
+              <strong>structure of web content</strong>. It builds the
+              <strong>skeleton of web pages.</strong>
+            </p>
+          </div>
+
+          <!-- Why is HTML used  -->
+          <div class="mini-container">
+            <h3>Why is HTML used?</h3>
+            <ul>
+              <li>
+                To <strong>structure web pages</strong> and display text,
+                images, videos, and links.
+              </li>
+              <li>
+                To <strong>define layout and content</strong> in a way that
+                browsers can understand.
+              </li>
+              <li>
+                It is the <strong>foundation of any website</strong>, along with
+                CSS (styling) and JavaScript (interactivity).
+              </li>
+            </ul>
+          </div>
 
           <!-- HTML element  -->
-
-          <h3>HTML element</h3>
-          <p>
-            An HTML element
-            <strong>defines the content and structure</strong> of a webpage.
-          </p>
-          <p>It usually consists of:</p>
-          <ul>
-            <li>An opening tag.</li>
-            <li>Some content.</li>
-            <li>A closing tag.</li>
-            <li><strong>&lt;p&gt; Content &lt;/p&gt;</strong></li>
-            <li>
-              Here &lt;p&gt; is the opening tag, &lt;/p&gt; is the closing tag,
-              and the entire structure is an HTML element.
-            </li>
-            <br/>
+          <div class="mini-container">
+            <h3>HTML element</h3>
             <p>
-              Some elements <strong>don't have closing tag or content</strong>,
-              they are called <strong>empty element</strong> or
+              An HTML element
+              <strong>defines the content and structure</strong> of a webpage.
+            </p>
+            <p>It usually consists of:</p>
+            <ul>
+              <li>An opening tag.</li>
+              <li>Some content.</li>
+              <li>A closing tag.</li>
+              <li><strong>&lt;p&gt; Content &lt;/p&gt;</strong></li>
+              <li>
+                Here &lt;p&gt; is the opening tag, &lt;/p&gt; is the closing
+                tag, and the entire structure is an HTML element.
+              </li>
+            </ul>
+            <p>
+              Some elements
+              <strong>don't have closing tag or content</strong>, they are
+              called <strong>empty tag</strong> or
+              <strong>empty element</strong> or
               <strong>self-closing element</strong> or
               <strong>void element</strong>. E.g. &lt;br&gt;, &lt;hr&gt;,
               &lt;img&gt;, &lt;input&gt; etc.
             </p>
-          </ul>
-          <br/>
-          <br/>
+          </div>
 
           <!-- Attributes  -->
+          <div class="mini-container">
+            <h3>Attributes</h3>
+            <p>
+              Attributes provide <strong>extra information</strong> about an
+              HTML element. It's used to add <strong>additional details</strong
+              >, <strong>behavior</strong>, or <strong>styling</strong>.
+            </p>
+            <ul>
+              <li>Added inside the opening tag.</li>
+              <li>Multiple attributes can be used in an element.</li>
+              <li>
+                Most attributes are written as
+                <strong>name="value"</strong> pairs.
+              </li>
+              <li>E.g. &lt;img <strong>src="image.jpg"</strong>&gt;</li>
+            </ul>
+            <h4>Common uses:</h4>
+            <ul>
+              <li><strong>href</strong> for links.</li>
+              <li><strong>src</strong> for images.</li>
+              <li><strong>alt</strong> for image descriptions.</li>
+              <li>
+                <strong>id</strong> and <strong>class</strong> for styling or
+                scripting.
+              </li>
+            </ul>
+          </div>
 
-          <h3>Attributes</h3>
-          <p>
-            Attributes provide <strong>extra information</strong> about an HTML
-            element. It's used to add <strong>additional details</strong>,
-            <strong>behavior</strong>, or <strong>styling</strong>.
-          </p>
-          <ul>
-            <li>Added inside the opening tag.</li>
-            <li>Multiple attributes can be used in an element.</li>
-            <li>
-              Most attributes are written as
-              <strong>name="value"</strong> pairs.
-            </li>
-            <li>E.g. &lt;img <strong>src="image.jpg"</strong>&gt;</li>
-          </ul>
-          <br/>
-          <h4>Common uses:</h4>
-          <ul>
-            <li><strong>href</strong> for links.</li>
-            <li><strong>src</strong> for images.</li>
-            <li><strong>alt</strong> for image descriptions.</li>
-            <li>
-              <strong>id</strong> and <strong>class</strong> for styling or
-              scripting.
-            </li>
-          </ul>
-          <br/>
-          <br/>
-          <h3>***</h3>
-          <ul>
-            <li>HTML is <strong>case insensitive</strong>.</li>
-            <li>Recommended to use small letters.</li>
-            <li>
-              It ignores <strong>extra spaces</strong> &
-              <strong>new lines</strong> except pre tag
-              (&lt;pre&gt;&lt;/pre&gt;).
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <!-- ***  -->
+          <div class="mini-container">
+            <h3>***</h3>
+            <ul>
+              <li>HTML is <strong>case insensitive</strong>.</li>
+              <li>Recommended to use small letters.</li>
+              <li>
+                It ignores <strong>extra spaces</strong> &
+                <strong>new lines</strong> except pre tag
+                (&lt;pre&gt;&lt;/pre&gt;).
+              </li>
+            </ul>
+          </div>
 
           <!-- HTML Boilerplate  -->
-
-          <h3>HTML Boilerplate</h3>
-          <p>
-            An HTML boilerplate or template is the basic
-            <strong>starting template</strong> of an HTML document. It includes
-            the essential code needed to make a webpage work properly in any
-            browser.
-          </p>
-          <br/>
-          <img src="./Images/html-boilerplate.png" alt="" />
-          <br/>
-          <br/>
-          <p>Here:</p>
-          <ul>
-            <li>
-              <strong>&lt;!DOCTYPE html&gt;</strong> Tells the browser this is
-              an HTML5 document.
-            </li>
-            <li>
-              <strong>&lt;html lang="en"&gt;</strong> Starts the HTML document;
-              lang="en" tells the browser and search engines that the language
-              of the content is English.
-            </li>
-            <li>
-              <strong>&lt;head&gt;&lt;/head&gt;</strong> Contains information
-              about the page (not visible on the page).
-            </li>
-            <li>
-              <strong>&lt;meta charset="UTF-8" /&gt;</strong> Sets the character
-              encoding (supports most characters).
-            </li>
-            <li>
-              <strong
-                >&lt;meta name="viewport" content="width=device-width,
-                initial-scale=1.0" /&gt;</strong
-              >
-              Makes the page responsive on mobile devices.
-            </li>
-            <li>
-              <strong>&lt;title&gt;My Web Page&lt;/title&gt;</strong> Sets the
-              page title (shown in the browser tab).
-            </li>
-            <li>
-              <strong>&lt;body&gt;&lt;/body&gt;</strong> Contains the visible
-              content of the webpage.
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML Boilerplate</h3>
+            <p>
+              An HTML boilerplate or template is the basic
+              <strong>starting template</strong> of an HTML document. It includes
+              the essential code needed to make a webpage work properly in any
+              browser.
+            </p>
+            <br />
+            <img src="./Images/html-boilerplate.png" alt="" />
+            <p>Here:</p>
+            <ul>
+              <li>
+                <strong>&lt;!DOCTYPE html&gt;</strong> Tells the browser this is
+                an HTML5 document.
+              </li>
+              <li>
+                <strong>&lt;html lang="en"&gt;</strong> Starts the HTML
+                document; lang="en" tells the browser and search engines that the
+                language of the content is English.
+              </li>
+              <li>
+                <strong>&lt;head&gt;&lt;/head&gt;</strong> Contains information
+                about the page (not visible on the page).
+              </li>
+              <li>
+                <strong>&lt;meta charset="UTF-8" /&gt;</strong> Sets the
+                character encoding (supports most characters).
+              </li>
+              <li>
+                <strong
+                  >&lt;meta name="viewport" content="width=device-width,
+                  initial-scale=1.0" /&gt;</strong
+                >
+                Makes the page responsive on mobile devices.
+              </li>
+              <li>
+                <strong>&lt;title&gt;My Web Page&lt;/title&gt;</strong> Sets the
+                page title (shown in the browser tab).
+              </li>
+              <li>
+                <strong>&lt;body&gt;&lt;/body&gt;</strong> Contains the visible
+                content of the webpage.
+              </li>
+            </ul>
+          </div>
 
           <!-- HTML Stractural Tags  -->
-
-          <h3>HTML Stractural Tags</h3>
-          <p>
-            &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,
-            &lt;h6&gt; and &lt;p&gt; are called structural tags.
-          </p>
-          <ul>
-            <p>They are also known as:</p>
-            <li>Text-level semantic tags.</li>
-            <li>Content structure tags.</li>
-            <li>Block-level tags (because they create blocks of content).</li>
-          </ul>
-          <br/>
-          <h4>How they work?</h4>
-          <ul>
-            <li>&lt;h1&gt; Main title of the page &lt;/h1&gt;.</li>
-            <li>&lt;h2&gt; Subheading &lt;/h2&gt;.</li>
-            <li>&lt;h3&gt; Smaller section heading &lt;/h3&gt;.</li>
-            <li>&lt;h6&gt; Smallest heading &lt;/h6&gt;.</li>
-            <li>&lt;p&gt; Text content or a paragraph block &lt;/p&gt;.</li>
-          </ul>
-          <br/>
-          <h4>Why they matter?</h4>
-          <ul>
-            <li>
-              Help browsers and search engines
-              <strong>understand the structure</strong> of your content.
-            </li>
-            <li>
-              Improve <strong>readability</strong>, <strong>SEO</strong>, and
-              <strong>accessibility</strong>.
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML Stractural Tags</h3>
+            <p>
+              &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,
+              &lt;h6&gt; and &lt;p&gt; are called structural tags.
+            </p>
+            <ul>
+              <p>They are also known as:</p>
+              <li>Text-level semantic tags.</li>
+              <li>Content structure tags.</li>
+              <li>
+                Block-level tags (because they create blocks of content).
+              </li>
+            </ul>
+            <h4>How they work?</h4>
+            <ul>
+              <li>&lt;h1&gt; Main title of the page &lt;/h1&gt;.</li>
+              <li>&lt;h2&gt; Subheading &lt;/h2&gt;.</li>
+              <li>&lt;h3&gt; Smaller section heading &lt;/h3&gt;.</li>
+              <li>&lt;h6&gt; Smallest heading &lt;/h6&gt;.</li>
+              <li>&lt;p&gt; Text content or a paragraph block &lt;/p&gt;.</li>
+            </ul>
+            <h4>Why they matter?</h4>
+            <ul>
+              <li>
+                Help browsers and search engines
+                <strong>understand the structure</strong> of your content.
+              </li>
+              <li>
+                Improve <strong>readability</strong>, <strong>SEO</strong>, and
+                <strong>accessibility</strong>.
+              </li>
+            </ul>
+          </div>
 
           <!-- Text Formatting Tags  -->
-
-          <h3>Text Formatting Tags</h3>
-          <p>
-            These tags are used in HTML to <strong>style</strong>,
-            <strong>emphasize</strong>, or
-            <strong>modify the appearance</strong> of text on a webpage.
-          </p>
-          <br/>
-          <h4>How they work</h4>
-          <ul>
-            <li>&lt;b&gt; Bold text (Visual only).</li>
-            <li>&lt;strong&gt; Bold text (Strong importance).</li>
-            <li>&lt;i&gt; Italic text (Visual only).</li>
-            <li>&lt;em&gt; Italic text (Emphasized).</li>
-            <li>&lt;u&gt; Underlined text.</li>
-            <li>&lt;mark&gt; Highighted text.</li>
-            <li>&lt;small&gt; Smaller text.</li>
-            <li>&lt;del&gt; Deleted (strikethrough) text.</li>
-            <li>&lt;ins&gt; Inserted (underlined) text.</li>
-            <li>&lt;sub&gt; Subscript (e.g., H₂O).</li>
-            <li>&lt;sup&gt; Superscript (e.g., x²).</li>
-            <li>&lt;code&gt; Monospaced text for code.</li>
-            <li>&lt;pre&gt; Preformatted text (preserves spacing).</li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Text Formatting Tags</h3>
+            <p>
+              These tags are used in HTML to <strong>style</strong>,
+              <strong>emphasize</strong>, or
+              <strong>modify the appearance</strong> of text on a webpage.
+            </p>
+            <h4>How they work</h4>
+            <ul>
+              <li>&lt;b&gt; Bold text (Visual only).</li>
+              <li>&lt;strong&gt; Bold text (Strong importance).</li>
+              <li>&lt;i&gt; Italic text (Visual only).</li>
+              <li>&lt;em&gt; Italic text (Emphasized).</li>
+              <li>&lt;u&gt; Underlined text.</li>
+              <li>&lt;mark&gt; Highighted text.</li>
+              <li>&lt;small&gt; Smaller text.</li>
+              <li>&lt;del&gt; Deleted (strikethrough) text.</li>
+              <li>&lt;ins&gt; Inserted (underlined) text.</li>
+              <li>&lt;sub&gt; Subscript (e.g., H₂O).</li>
+              <li>&lt;sup&gt; Superscript (e.g., x²).</li>
+              <li>&lt;code&gt; Monospaced text for code.</li>
+              <li>&lt;pre&gt; Preformatted text (preserves spacing).</li>
+            </ul>
+          </div>
 
           <!-- Embedded Content Tags  -->
-
-          <h3>Embedded Content Tags</h3>
-          <p>
-            &lt;img&gt;, &lt;audio&gt;, &lt;video&gt;,
-            &lt;iframe&gt;&lt;/iframe&gt; etc.
-          </p>
-          <ul>
-            <li>They are also known as <strong>Multimedia tags</strong>.</li>
-            <li>
-              These tags are used to embed <strong>media</strong> or
-              <strong>link</strong> to <strong>external content</strong> in an
-              HTML page.
-            </li>
-            <li>
-              They are essential for making websites
-              <strong>interactive and visually rich</strong>.
-            </li>
-          </ul>
-          <br/>
-          <h4>How they work?</h4>
-          <ul>
-            <li>&lt;img src="" alt=""&gt; Image tag, displays an image.</li>
-            <li>
-              &lt;audio src=""&gt;&lt;/audio&gt; Audio tag, embeds audio with
-              controls, autoplay, muted, loop.
-            </li>
-            <li>
-              &lt;video src=""&gt;&lt;/video&gt; Video tag, embeds video with
-              controls, autoplay, muted, loop.
-            </li>
-            <li>
-              &lt;iframe&gt;&lt;/iframe&gt; Embeds another webpage inside your
-              webpage.
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Embedded Content Tags</h3>
+            <p>
+              &lt;img&gt;, &lt;audio&gt;, &lt;video&gt;,
+              &lt;iframe&gt;&lt;/iframe&gt; etc.
+            </p>
+            <ul>
+              <li>
+                They are also known as <strong>Multimedia tags</strong>.
+              </li>
+              <li>
+                These tags are used to embed <strong>media</strong> or
+                <strong>link</strong> to <strong>external content</strong> in an
+                HTML page.
+              </li>
+              <li>
+                They are essential for making websites
+                <strong>interactive and visually rich</strong>.
+              </li>
+            </ul>
+            <h4>How they work?</h4>
+            <ul>
+              <li>&lt;img src="" alt=""&gt; Image tag, displays an image.</li>
+              <li>
+                &lt;audio src=""&gt;&lt;/audio&gt; Audio tag, embeds audio with
+                controls, autoplay, muted, loop.
+              </li>
+              <li>
+                &lt;video src=""&gt;&lt;/video&gt; Video tag, embeds video with
+                controls, autoplay, muted, loop.
+              </li>
+              <li>
+                &lt;iframe&gt;&lt;/iframe&gt; Embeds another webpage inside your
+                webpage.
+              </li>
+            </ul>
+          </div>
 
           <!-- Anchor Tags  -->
-
-          <h3>Anchor Tag</h3>
-          <p>&lt;a&gt;</p>
-          <ul>
-            <li>&lt;a href="" target=""&gt;</li>
-            <li>Also known as <strong>hyperlink tag</strong>.</li>
-            <li>
-              Used to <strong>create hyperlinks</strong> to other pages, files,
-              or locations.
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Anchor Tag</h3>
+            <p>&lt;a&gt;</p>
+            <ul>
+              <li>&lt;a href="" target=""&gt;</li>
+              <li>Also known as <strong>hyperlink tag</strong>.</li>
+              <li>
+                Used to <strong>create hyperlinks</strong> to other pages, files,
+                or locations.
+              </li>
+            </ul>
+          </div>
 
           <!-- HTML List Tags  -->
-
-          <h3>HTML List Tags</h3>
-          <p>There are three types of list tags in HTML.</p>
-          <ul>
-            <li>Ordered list &lt;ol&gt;&lt;/ol&gt;.</li>
-            <li>Unordered list &lt;ul&gt;&lt;/ul&gt;.</li>
-            <li>Description list &lt;dl&gt;&lt;/dl&gt;.</li>
-          </ul>
-          <br/>
-          <p>
-            List item &lt;li&gt; (used inside &lt;ol&gt; & &lt;ul&gt;).
-            <br/>
-            Description term &lt;dt&gt;, Description detail &lt;dd&gt; (used
-            inside &lt;dl&gt;).
-          </p>
-          <h4>E.g. (exempli gratia)</h4>
-          <img src="./Images/list.png" alt="Example of list tags." />
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML List Tags</h3>
+            <p>There are three types of list tags in HTML.</p>
+            <ul>
+              <li>Ordered list &lt;ol&gt;&lt;/ol&gt;.</li>
+              <li>Unordered list &lt;ul&gt;&lt;/ul&gt;.</li>
+              <li>Description list &lt;dl&gt;&lt;/dl&gt;.</li>
+            </ul>
+            <p>
+              List item &lt;li&gt; (used inside &lt;ol&gt; & &lt;ul&gt;).
+              <br />
+              Description term &lt;dt&gt;, Description detail &lt;dd&gt; (used
+              inside &lt;dl&gt;).
+            </p>
+            <h4>E.g. (exempli gratia)</h4>
+            <img src="./Images/list.png" alt="Example of list tags." />
+          </div>
 
           <!-- HTML Table  -->
-
-          <h3>HTML Table</h3>
-          <p>
-            HTML tables are used to display data in rows and columns, like in a
-            spreadsheet.
-          </p>
-          <ul>
-            <h4>It contains:</h4>
-            <li>&lt;table&gt; Table</li>
-            <li>&lt;caption&gt; Table caption</li>
-            <li>&lt;thead&gt; Table head (optional)</li>
-            <li>&lt;tbody&gt; Table body (optional)</li>
-            <li>&lt;tfoot&gt; Table footer (optional)</li>
-            <li>&lt;tr&gt; Table row</li>
-            <li>&lt;th&gt; Table heading</li>
-            <li>&lt;td&gt; Table data</li>
-          </ul>
-          <br/>
-          <p>E.g.</p>
-          <img src="./Images/table-html2.png" alt="HTML code of a table" />
-          <br/>
-          <p>Need some CSS styling:</p>
-          <img src="./Images/table-css.png" alt="CSS for table" />
-          <br/>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML Table</h3>
+            <p>
+              HTML tables are used to display data in rows and columns, like in a
+              spreadsheet.
+            </p>
+            <ul>
+              <h4>It contains:</h4>
+              <li>&lt;table&gt; Table</li>
+              <li>&lt;caption&gt; Table caption</li>
+              <li>&lt;thead&gt; Table head (optional)</li>
+              <li>&lt;tbody&gt; Table body (optional)</li>
+              <li>&lt;tfoot&gt; Table footer (optional)</li>
+              <li>&lt;tr&gt; Table row</li>
+              <li>&lt;th&gt; Table heading</li>
+              <li>&lt;td&gt; Table data</li>
+            </ul>
+            <p>E.g.</p>
+            <img src="./Images/table-html2.png" alt="HTML code of a table" />
+            <p>Need some CSS styling:</p>
+            <img src="./Images/table-css.png" alt="CSS for table" />
+          </div>
 
           <!-- HTML Form  -->
-
-          <h3>HTML Form</h3>
-          <p>
-            The &lt;form&gt; tag is used to collect user input and send it to a
-            server
-          </p>
-          <ul>
-            <h4>It contains:</h4>
-            <li>&lt;form&gt; Defines the form container.</li>
-            <li>action="" URL where form data will be sent.</li>
-            <li>&lt;label&gt; Defines a label for an input field.</li>
-            <li>
-              &lt;input&gt; Gets user input (text, email, password, radio,
-              checkbox etc.).
-            </li>
-            <li>&lt;textarea&gt; Multi-line text input.</li>
-            <li>&lt;select&gt; Dropdown menu.</li>
-            <li>&lt;button&gt; Button to submit the form.</li>
-            <li>
-              &lt;fieldset&gt; Groups related form fields into a box with a
-              border (by default).
-            </li>
-            <li>
-              &lt;legend&gt; Provides a title for the group defined by
-              &lt;fieldset&gt;.
-            </li>
-          </ul>
-          <p>E.g.</p>
-          <img src="./Images/form-html.png" alt="HTML code of form." />
-          <br/>
-          <h4>Input type radio:</h4>
-          <p>Used to select only one option from a group.</p>
-          <img src="./Images/form-radio.png" alt="HTML code of input type" />
-          <br/>
-          <h4>Input type checkbox:</h4>
-          <p>Used to select multiple options.</p>
-          <img
-            src="./Images/form-checkbox.png"
-            alt="HTML code of checkbox type"
-          />
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML Form</h3>
+            <p>
+              The &lt;form&gt; tag is used to collect user input and send it to a
+              server
+            </p>
+            <ul>
+              <h4>It contains:</h4>
+              <li>&lt;form&gt; Defines the form container.</li>
+              <li>action="" URL where form data will be sent.</li>
+              <li>&lt;label&gt; Defines a label for an input field.</li>
+              <li>
+                &lt;input&gt; Gets user input (text, email, password, radio,
+                checkbox etc.).
+              </li>
+              <li>&lt;textarea&gt; Multi-line text input.</li>
+              <li>&lt;select&gt; Dropdown menu.</li>
+              <li>&lt;button&gt; Button to submit the form.</li>
+              <li>
+                &lt;fieldset&gt; Groups related form fields into a box with a
+                border (by default).
+              </li>
+              <li>
+                &lt;legend&gt; Provides a title for the group defined by
+                &lt;fieldset&gt;.
+              </li>
+            </ul>
+            <p>E.g.</p>
+            <img src="./Images/form-html.png" alt="HTML code of form." />
+            <h4>Input type radio:</h4>
+            <p>Used to select only one option from a group.</p>
+            <img src="./Images/form-radio.png" alt="HTML code of input type" />
+            <h4>Input type checkbox:</h4>
+            <p>Used to select multiple options.</p>
+            <img
+              src="./Images/form-checkbox.png"
+              alt="HTML code of checkbox type"
+            />
+          </div>
 
           <!-- HTML Entities  -->
-
-          <h3>HTML Entities</h3>
-          <p>
-            HTML entities are special codes used to display reserved or
-            invisible characters in HTML documents.
-          </p>
-          <h4>Why Use HTML Entities?</h4>
-          <ul>
-            <li>
-              To <strong>display reserved characters</strong> like <, >, & that
-              HTML uses for tags.
-            </li>
-            <li>
-              To <strong>insert special symbols</strong> not available on a
-              regular keyboard, like © or €.
-            </li>
-            <li>
-              To <strong>show invisible characters</strong> like extra spaces.
-            </li>
-          </ul>
-          <br/>
-          <h4>Basic Structure of an HTML Entities</h4>
-          <p>
-            An entity starts with an <strong>ampersand (&)</strong> and ends
-            with a <strong>semicolon (;)</strong>.
-          </p>
-          <ul>
-            <li><strong>&amp;lt;</strong> shows <</li>
-            <li><strong>&amp;gt;</strong> shows ></li>
-            <li><strong>&amp;amp;</strong> shows &</li>
-            <li><strong>&amp;copy;</strong> shows Copyright ©</li>
-            <li><strong>&amp;euro;</strong> shows Euro €</li>
-          </ul>
-          <br/>
-          <p>We can also use Numeric codes:</p>
-          <ul>
-            <li><strong>&amp;#60;</strong> also shows <</li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>HTML Entities</h3>
+            <p>
+              HTML entities are special codes used to display reserved or
+              invisible characters in HTML documents.
+            </p>
+            <h4>Why Use HTML Entities?</h4>
+            <ul>
+              <li>
+                To <strong>display reserved characters</strong> like <, >, & that
+                HTML uses for tags.
+              </li>
+              <li>
+                To <strong>insert special symbols</strong> not available on a
+                regular keyboard, like © or €.
+              </li>
+              <li>
+                To <strong>show invisible characters</strong> like extra spaces.
+              </li>
+            </ul>
+            <h4>Basic Structure of an HTML Entities</h4>
+            <p>
+              An entity starts with an <strong>ampersand (&)</strong> and ends
+              with a <strong>semicolon (;)</strong>.
+            </p>
+            <ul>
+              <li><strong>&amp;lt;</strong> shows <</li>
+              <li><strong>&amp;gt;</strong> shows ></li>
+              <li><strong>&amp;amp;</strong> shows &</li>
+              <li><strong>&amp;copy;</strong> shows Copyright ©</li>
+              <li><strong>&amp;euro;</strong> shows Euro €</li>
+            </ul>
+            <p>We can also use Numeric codes:</p>
+            <ul>
+              <li><strong>&amp;#60;</strong> also shows <</li>
+            </ul>
+          </div>
 
           <!-- Inline vs Block  -->
-
-          <h3>Inline vs Block Elements</h3>
-          <h4>A block-level element:</h4>
-          <ul>
-            <li>Always <strong>starts on a new line.</strong></li>
-            <li>
-              <strong>Takes up the full width</strong> of its parent container
-              (by default).
-            </li>
-            <li>Can contain both block and inline element inside it.</li>
-          </ul>
-          <br/>
-          <p>Common <strong>block elements</strong>:</p>
-          <p>
-            &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;,
-            &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, &lt;header&gt;,
-            &lt;footer&gt; etc.
-          </p>
-          <h4>An inline element:</h4>
-          <ul>
-            <li>Does not start on a new line.</li>
-            <li>Only takes up as much <strong>width as necessary</strong>.</li>
-            <li>
-              Can contain
-              <strong>only text or other inline elements</strong> (not block
-              elements).
-            </li>
-          </ul>
-          <br/>
-          <p>Common <strong>inline elements</strong>:</p>
-          <p>
-            &lt;span&gt;, &lt;a&gt;,
-            &lt;strong&gt;, &lt;em&gt;,
-            &lt;b&gt;, &lt;i&gt;, &lt;img&gt;,
-            &lt;label&gt;&lt;/label&gt;, &lt;input&gt; etc.
-          </p>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Inline vs Block Elements</h3>
+            <h4>A block-level element:</h4>
+            <ul>
+              <li>Always <strong>starts on a new line.</strong></li>
+              <li>
+                <strong>Takes up the full width</strong> of its parent container
+                (by default).
+              </li>
+              <li>Can contain both block and inline element inside it.</li>
+            </ul>
+            <p>Common <strong>block elements</strong>:</p>
+            <p>
+              &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;,
+              &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, &lt;header&gt;,
+              &lt;footer&gt; etc.
+            </p>
+            <h4>An inline element:</h4>
+            <ul>
+              <li>Does not start on a new line.</li>
+              <li>
+                Only takes up as much <strong>width as necessary</strong>.
+              </li>
+              <li>
+                Can contain
+                <strong>only text or other inline elements</strong> (not block
+                elements).
+              </li>
+            </ul>
+            <p>Common <strong>inline elements</strong>:</p>
+            <p>
+              &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;,
+              &lt;i&gt;, &lt;img&gt;, &lt;label&gt;&lt;/label&gt;, &lt;input&gt;
+              etc.
+            </p>
+          </div>
 
           <!-- Container Tags  -->
-
-          <h3>Container Tags</h3>
-          <p>
-            Container tags are HTML elements used to
-            <strong>organize and group other elements together</strong>.
-          </p>
-          <ul>
-            <li>
-              They help create a <strong>logical structure</strong> on the page.
-            </li>
-            <li>
-              Making it <strong>easier to style</strong>,
-              <strong>manipulate</strong>, and
-              <strong>understand the content</strong>.
-            </li>
-            <li>Some container tags are <strong>semantic</strong>.</li>
-            <li>Others are <strong>non-semantic</strong>.</li>
-          </ul>
-          <br/>
-          <p>Common Container Tags:</p>
-          <p>
-            &lt;div&gt;, &lt;span&gt;, &lt;section&gt;, &lt;article&gt;,
-            &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;main&gt;,
-            &lt;aside&gt; etc.
-          </p>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Container Tags</h3>
+            <p>
+              Container tags are HTML elements used to
+              <strong>organize and group other elements together</strong>.
+            </p>
+            <ul>
+              <li>
+                They help create a <strong>logical structure</strong> on the
+                page.
+              </li>
+              <li>
+                Making it <strong>easier to style</strong>,
+                <strong>manipulate</strong>, and
+                <strong>understand the content</strong>.
+              </li>
+              <li>Some container tags are <strong>semantic</strong>.</li>
+              <li>Others are <strong>non-semantic</strong>.</li>
+            </ul>
+            <p>Common Container Tags:</p>
+            <p>
+              &lt;div&gt;, &lt;span&gt;, &lt;section&gt;, &lt;article&gt;,
+              &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;main&gt;,
+              &lt;aside&gt; etc.
+            </p>
+          </div>
 
           <!-- Semantic vs non-semantic  -->
-
-          <h3>Semantic vs Non-semantic Tags</h3>
-          <h4>Semantic Tags</h4>
-          <p>
-            Tags that clearly describe
-            <strong>their meaning and the type</strong> of content they contain.
-          </p>
-          <ul>
-            <li>Better page layouts.</li>
-            <li>Better indexing by Search Engines.</li>
-            <li>Makes code easier to read and maintain.</li>
-            <li>
-              Help browsers, developers, and search engines understand
-              <strong>the structure and meaning of the webpage</strong>.
-            </li>
-          </ul>
-          <br/>
-          <p>E.g.</p>
-          <p>
-            &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt;,
-            &lt;nav&gt;, &lt;main&gt;, &lt;aside&gt;, &lt;form&gt;,
-            &lt;address&gt;, &lt;blockquote&gt;, &lt;abbr&gt; etc.
-          </p>
-          <br/>
-          <h4>Non-semantic Tags</h4>
-          <p>
-            Tags that do not describe the content meaning,
-            <strong>only used for layout or grouping</strong>.
-          </p>
-          <ul>
-            <li>Harder to understand page structure.</li>
-            <li>Less meaningful for browsers and assistive technologies.</li>
-            <li>
-              Mainly used for <strong>styling or scripting</strong> without
-              indicating what content is inside.
-            </li>
-          </ul>
-          <br/>
-          <p>E.g.</p>
-          <p>&lt;div&gt;&lt;/div&gt;, &lt;span&gt;&lt;/span&gt;</p>
-          <br/>
-          <h4>In short:</h4>
-          <p>
-            Use semantic tags whenever possible to make your HTML meaningful and
-            accessible. Use non-semantic tags like &lt;div&gt; and &lt;span&gt;
-            only when no semantic tag fits.
-          </p>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Semantic vs Non-semantic Tags</h3>
+            <h4>Semantic Tags</h4>
+            <p>
+              Tags that clearly describe
+              <strong>their meaning and the type</strong> of content they
+              contain.
+            </p>
+            <ul>
+              <li>Better page layouts.</li>
+              <li>Better indexing by Search Engines.</li>
+              <li>Makes code easier to read and maintain.</li>
+              <li>
+                Help browsers, developers, and search engines understand
+                <strong>the structure and meaning of the webpage</strong>.
+              </li>
+            </ul>
+            <p>E.g.</p>
+            <p>
+              &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt;,
+              &lt;nav&gt;, &lt;main&gt;, &lt;aside&gt;, &lt;form&gt;,
+              &lt;address&gt;, &lt;blockquote&gt;, &lt;abbr&gt; etc.
+            </p>
+            <h4>Non-semantic Tags</h4>
+            <p>
+              Tags that do not describe the content meaning,
+              <strong>only used for layout or grouping</strong>.
+            </p>
+            <ul>
+              <li>Harder to understand page structure.</li>
+              <li>Less meaningful for browsers and assistive technologies.</li>
+              <li>
+                Mainly used for <strong>styling or scripting</strong> without
+                indicating what content is inside.
+              </li>
+            </ul>
+            <p>E.g.</p>
+            <p>&lt;div&gt;&lt;/div&gt;, &lt;span&gt;&lt;/span&gt;</p>
+            <h4>In short:</h4>
+            <p>
+              Use semantic tags whenever possible to make your HTML meaningful
+              and accessible. Use non-semantic tags like &lt;div&gt; and
+              &lt;span&gt; only when no semantic tag fits.
+            </p>
+          </div>
 
           <!-- Best Practices  -->
-
-          <h3>Best Practices</h3>
-          <ul>
-            <li>Use lowercase for tags and attributes.</li>
-            <li>Always close your tags properly.</li>
-            <li>Use semantic tags wherever possible.</li>
-            <li>Keep code clean and indented for readability.</li>
-            <li>
-              Validate your HTML using tools like
-              <a href="https://validator.w3.org/">W3C Validator</a>.
-            </li>
-          </ul>
-          <br/>
-          <br/>
+          <div class="mini-container">
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Use lowercase for tags and attributes.</li>
+              <li>Always close your tags properly.</li>
+              <li>Use semantic tags wherever possible.</li>
+              <li>Keep code clean and indented for readability.</li>
+              <li>
+                Validate your HTML using tools like
+                <a href="https://validator.w3.org/">W3C Validator</a>.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- footer section  -->
-
     <footer>
       <h2>alWeasi</h2>
       <p>Software Developer - Frontend</p>
