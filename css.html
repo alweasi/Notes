@@ -8,7 +8,6 @@
   </head>
   <body>
     <!-- header section  -->
-
     <header>
       <nav class="container">
         <ul>
@@ -23,17 +22,116 @@
     </header>
 
     <!-- main section  -->
-
     <main>
-      <hr>
+      <hr />
       <section class="main_container container">
-        <h2 class="main_heading">CSS - Cascading Style Sheet</h2>
-        <p>Under construction!</p>
+        <!-- Introduction to CSS  -->
+        <h2 class="main_heading">Introduction to CSS</h2>
+        <div class="main_content">
+
+          <!-- What is CSS  -->
+          <div class="mini-container">
+            <h3>What is CSS?</h3>
+            <p>
+              CSS stands for <strong>Cascading Style Sheets</strong>. It is used
+              to style and design the layout of a webpage written in HTML.
+            </p>
+            <h4>CSS Syntax</h4>
+            <img src="./Images/css-syntax.png" alt="syntax photo of css" />
+            <ul>
+              <p>Here:</p>
+              <li><strong>h1</strong> is selector.</li>
+              <li><strong>font-size</strong> is property</li>
+              <li><strong>16px</strong> is value.</li>
+              <li><strong>font-size: 16px</strong> is a declaration.</li>
+            </ul>
+          </div>
+
+          <!-- Three ways to add CSS  -->
+          <div class="mini-container">
+            <h3>Three ways to add CSS</h3>
+            <p>
+              There are three ways to add CSS to a webpage.
+            </p>
+            <h4>Inline CSS</h4>
+            <p>
+              Apply styles directly to an HTML element using the
+              <strong>style attribute</strong>.
+            </p>
+            <img
+              src="./Images/css-inline.png"
+              alt="photo example of inline css"
+            />
+            <ul>
+              <p>Advantages:</p>
+              <li>Quick changes – Useful for small adjustments.</li>
+              <li>Targets individual elements – Good for unique styling.</li>
+            </ul>
+            <ul>
+              <p>Disadvantages:</p>
+              <li>
+                Code repetition – The same style must be rewritten multiple
+                times.
+              </li>
+              <li>Hard to maintain – Difficult to update in large projects.</li>
+              <li>Bad for SEO & performance – Increases HTML file size.</li>
+            </ul>
+            <h4>Internal CSS</h4>
+            <p>
+              Apply styles <strong>inside a &lt;style&gt; element</strong> in
+              the &lt;head&gt; section of an HTML file.
+            </p>
+            <img
+              src="./Images/css-internal.png"
+              alt="photo example of internal css"
+            />
+            <ul>
+              <p>Advantages:</p>
+              <li>Single-file management (HTML + CSS together).</li>
+              <li>Better than inline CSS for multiple elements.</li>
+              <li>Faster loading than external CSS (no extra HTTP request).</li>
+            </ul>
+            <ul>
+              <p>Disadvantages:</p>
+              <li>Can make HTML file larger.</li>
+              <li>Only works on one HTML page.</li>
+              <li>Harder to maintain in large projects.</li>
+            </ul>
+            <h4>External CSS</h4>
+            <p>Apply CSS rules in a <strong>separate .css file and linked to HTML documents</strong>.</p>
+            <img src="./Images/css-external.png" alt="photo example of external css">
+            <ul>
+              <p>Advantages:</p>
+                <li>Easy to maintain.</li>
+                <li>Better separation of concerns.</li>
+                <li>Faster page loading (cached by browser).</li>
+                <li>Consistent styling across multiple pages.</li>
+                <li>Improved SEO (cleaner HTML structure).</li>
+            </ul>
+            <ul>
+              <p>Disadvantages:</p>
+              <li>Extra HTTP request required (minimal impact with caching).</li>
+            </ul>
+            <p><strong>** This is the most professional and maintainable approach for styling websites.</strong></p>
+          </div>
+
+          <!-- CSS Selectors  -->
+          <div class="mini-container">
+            <h3>CSS Selectors</h3>
+            <h4>Basic selectors:</h4>
+            <ul>
+              <li>p – selects all &lt;p&gt; elements.</li>
+              <li>h1 – selects all &lt;h1&gt; elements.</li>
+              <li>div – selects all &lt;div&gt; elements.</li>
+              <li>#id – selects element with a specific id.</li>
+              <li>.class – selects all elements with that class.</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- footer section  -->
-
     <footer>
       <h2>alWeasi</h2>
       <p>Software Developer - Frontend</p>
