@@ -153,8 +153,8 @@ td {
 footer {
   background: var(--primary-color);
   color: aliceblue;
-  padding: 2rem 0;
   text-align: center;
+  padding: 2rem 0;
 }
 
 footer > * {
@@ -213,4 +213,34 @@ footer h2 {
   nav {
     padding: 2rem 0;
   }
+}
+
+
+
+
+
+
+
+.background {
+  padding-block: 300px;
+  background-image: url(./Images/fb-cover-mountain-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+  color: white;
+  border-image: fill 1 linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.511));
+}
+
+/* .background::before {
+  content: '';
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.529);
+  inset: 0;
+  z-index: -1;
+} */
+
+.cont {
+  max-width: 500px;
 }

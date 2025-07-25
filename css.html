@@ -28,7 +28,6 @@
         <!-- Introduction to CSS  -->
         <h2 class="main_heading">Introduction to CSS</h2>
         <div class="main_content">
-
           <!-- What is CSS  -->
           <div class="mini-container">
             <h3>What is CSS?</h3>
@@ -50,9 +49,7 @@
           <!-- Three ways to add CSS  -->
           <div class="mini-container">
             <h3>Three ways to add CSS</h3>
-            <p>
-              There are three ways to add CSS to a webpage.
-            </p>
+            <p>There are three ways to add CSS to a webpage.</p>
             <h4>Inline CSS</h4>
             <p>
               Apply styles directly to an HTML element using the
@@ -98,35 +95,251 @@
               <li>Harder to maintain in large projects.</li>
             </ul>
             <h4>External CSS</h4>
-            <p>Apply CSS rules in a <strong>separate .css file and linked to HTML documents</strong>.</p>
-            <img src="./Images/css-external.png" alt="photo example of external css">
+            <p>
+              Apply CSS rules in a
+              <strong>separate .css file and linked to HTML documents</strong>.
+            </p>
+            <img
+              src="./Images/css-external.png"
+              alt="photo example of external css"
+            />
             <ul>
               <p>Advantages:</p>
-                <li>Easy to maintain.</li>
-                <li>Better separation of concerns.</li>
-                <li>Faster page loading (cached by browser).</li>
-                <li>Consistent styling across multiple pages.</li>
-                <li>Improved SEO (cleaner HTML structure).</li>
+              <li>Easy to maintain.</li>
+              <li>Better separation of concerns.</li>
+              <li>Faster page loading (cached by browser).</li>
+              <li>Consistent styling across multiple pages.</li>
+              <li>Improved SEO (cleaner HTML structure).</li>
             </ul>
             <ul>
               <p>Disadvantages:</p>
-              <li>Extra HTTP request required (minimal impact with caching).</li>
+              <li>
+                Extra HTTP request required (minimal impact with caching).
+              </li>
             </ul>
-            <p><strong>** This is the most professional and maintainable approach for styling websites.</strong></p>
+            <p>
+              <strong
+                >** This is the most professional and maintainable approach for
+                styling websites.</strong
+              >
+            </p>
           </div>
 
           <!-- CSS Selectors  -->
           <div class="mini-container">
             <h3>CSS Selectors</h3>
-            <h4>Basic selectors:</h4>
+
             <ul>
-              <li>p – selects all &lt;p&gt; elements.</li>
-              <li>h1 – selects all &lt;h1&gt; elements.</li>
-              <li>div – selects all &lt;div&gt; elements.</li>
-              <li>#id – selects element with a specific id.</li>
-              <li>.class – selects all elements with that class.</li>
+              <li><strong>Universal Selector:</strong> * { margin: 0; }</li>
+              <li><strong>Element Selector:</strong> p { color: red; }</li>
+              <li>
+                <strong>ID Selector:</strong> #header { background: blue; }
+              </li>
+              <li>
+                <strong>Class Selector:</strong> .box { border: 1px solid; }
+              </li>
+              <li><strong>Group Selector:</strong> h1, h2 { color: green; }</li>
+              <li>
+                <strong>Descendant Selector:</strong> div p { color: purple; }
+              </li>
+              <li>
+                <strong>Child Selector:</strong> div > p { color: orange; }
+              </li>
+              <li>
+                <strong>Adjacent Sibling:</strong> h1 + p { color: brown; }
+              </li>
+              <li>
+                <strong>Pseudo-classes:</strong> a:hover; first-child,
+                last-child, nth-child(odd/even/1/2n/2n+1), nth-last-child(2)
+              </li>
+              <li>
+                <strong>Pseudo-elements:</strong> input:focus, p::before,
+                p::after
+              </li>
+              <li>
+                <strong>Attribute Selector:</strong> input[type="text"] { color:
+                orange; }
+              </li>
+            </ul>
+            <p>
+              <strong>ID </strong>is used to style a single, unique element.
+              Can't use the same id for multiple elements.
+            </p>
+            <p>
+              <strong>Class </strong>is used to style multiple elements with the
+              same styling. Can apply the same class to many elements, and an
+              element can have multiple classes.
+            </p>
+          </div>
+
+          <!-- CSS Colors  -->
+          <div class="mini-container">
+            <h3>CSS Colors</h3>
+            <ul>
+              <li>Named colors: { color: white; }</li>
+              <li>Hex: { color: #fffff; }</li>
+              <li>RGB: { color: rgb(255, 255, 255); }</li>
+              <li>RGBA: { color: rgba(255, 255, 255, 0.65); }</li>
+              <li>HSL: { color: hsl(0, 0%, 100%); }</li>
+              <li>HSLA: { color: hsla(0, 0%, 100%, 0.65); }</li>
             </ul>
           </div>
+
+          <!-- CSS Units  -->
+          <div class="mini-container">
+            <h3>CSS Units</h3>
+            <ul>
+              <li><strong>Absolute:</strong> px, cm, mm, in.</li>
+              <li>
+                <strong>Relative:</strong> %, em (relative to parent), rem
+                (relative to root), vh (viewport height), vw (viewport width),
+                vmin (viewport minimum), vmax (viewport maximum).
+              </li>
+            </ul>
+          </div>
+
+          <!-- Text & Font Styling  -->
+          <div class="mini-container">
+            <h3>Text & Font Styling</h3>
+            <img
+              src="./Images/font-styling.png"
+              alt="Image of all css font styling properties"
+            />
+            <h4>Font Usage Tips</h4>
+            <ul>
+              <li>
+                <b>Google Fonts:</b> Use &lt;link&gt; in HTML head or @import in
+                .css file.
+              </li>
+              <li>
+                <b>Local Font Files:</b> Download .ttf or .woff file and use
+                @font-face.
+              </li>
+              <li>
+                <b>Fallback Fonts:</b> Always add backups like sans-serif or
+                serif.
+              </li>
+              <li>
+                <b>Consistency:</b> Use only 1–2 fonts across the entire
+                website.
+              </li>
+              <li>
+                <b>Responsive Font Size:</b> Use em, rem, or vw units instead of
+                fixed px.
+              </li>
+            </ul>
+          </div>
+
+          <!-- CSS Box Model -->
+          <div class="mini-container">
+            <h3>CSS Box Model</h3>
+            <p>
+              The fundamental concept of calculating the total size (height and
+              width) of an element is called the Box Model. According to the CSS
+              Box Model, every HTML element is treated as a rectangular box
+              consisting of 4 parts:
+            </p>
+            <p>
+              <strong>Content: </strong>The actual text, image, or other content
+              inside the element.
+            </p>
+            <p>
+              <strong>Border:</strong> The border is the outer edge of an
+              element. It is the line that surrounds the content and padding of
+              an element.
+            </p>
+            <p>
+              <strong>Padding:</strong> Padding is the space inside the border
+              of an element. It increases the space between the content and the
+              border.
+            </p>
+            <p>
+              <strong>Margin:</strong> Margin is the space outside the border of
+              an element. It creates space between the element and other
+              elements around it.
+            </p>
+            <h4>How CSS calculate the size of an element?</h4>
+            <p>
+              In CSS, the total width and height of an element depend on the box
+              model. By default, elements use the content-box model, where the
+              width property only applies to the content area. Any padding or
+              border you add increases the actual size of the element.
+            </p>
+            <h4>For example:</h4>
+            <p>
+              If an element has a width of 100px, 20px padding on both the left
+              and right, and a 2px border on each side, the total width is
+              calculated as follows:
+            </p>
+            <p>
+              Total Width = content width + left padding + right padding + left
+              border + right border
+            </p>
+            <p>Total Width = 100px + 20px + 20px + 2px + 2px = 144px</p>
+            <p>
+              This means the element will occupy 144px of space instead of the
+              100px you set. This is why we use
+              <strong
+                >'box-sizing: border-box'. When border-box is applied, the
+                specified width (100px in this case) includes the content,
+                padding, and border.</strong
+              >
+            </p>
+            <p>
+              The total width stays 100px, but the content area shrinks to make
+              room for padding and borders. For example: Content width = 100px -
+              (20px + 20px) - (2px + 2px) = 56px. Using border-box makes layout
+              design simpler and more predictable.
+            </p>
+          </div>
+
+          <!-- CSS Background  -->
+          <div class="mini-container">
+            <h3>CSS Background</h3>
+            <ul>
+              <li>
+                <strong>background-color:</strong> Sets the background color.
+              </li>
+              <li>
+                <strong>background-image: url("image.jpg");</strong> Sets a
+                background image (can be used multiple images).
+              </li>
+              <li>
+                <strong>background-repeat:</strong> Controls image repetition
+                ('repeat', 'no-repeat').
+              </li>
+              <li>
+                <strong>background-position:</strong> Sets the position of the
+                image (e.g., 'center', 'top-right', '10px 20px').
+              </li>
+              <li>
+                <strong>background-size:</strong> Sets the size of the image
+                (e.g., 'cover', 'contain', '100px 200px').
+              </li>
+              <li>
+                <strong>background-attachment:</strong> Scroll behavior
+                ('scroll', 'fixed', 'local').
+              </li>
+            </ul>
+            <h4>How to add an overlay to a background-image?</h4>
+            <p>There are several ways to do so:</p>
+            <ul>
+              <li>
+                <strong>background-blend-mode:</strong> Add a bg-color then use
+                blend-mode (eg. 'multiply', 'lighten').
+              </li>
+              <li>
+                <strong>border-image:</strong> Add a bg-image (linear gradiant),
+                then fill 1.
+              </li>
+              <li>
+                <strong>before/after::</strong> Use z-index or
+                isolation:isolate.
+              </li>
+            </ul>
+          </div>
+
+          <!--  -->
         </div>
       </section>
     </main>
